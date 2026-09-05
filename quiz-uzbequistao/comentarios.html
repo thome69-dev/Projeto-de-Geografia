@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Comentários · Quiz Uzbequistão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <main class="shell">
+    <div class="card card-wide">
+      <p class="eyebrow">Opiniões</p>
+      <h1 class="title">Quantas pessoas tiveram cada comentário</h1>
+      <p id="total-votos" class="lead">Ainda ninguém votou neste aparelho.</p>
+
+      <ul class="stats" id="stats-list">
+        <li>
+          <div class="stat-row">
+            <span>Gostei</span>
+            <strong id="count-gostei">0</strong>
+          </div>
+          <div class="stat-track"><span id="bar-gostei" class="stat-fill fill-good"></span></div>
+        </li>
+        <li>
+          <div class="stat-row">
+            <span>Mediano</span>
+            <strong id="count-mediano">0</strong>
+          </div>
+          <div class="stat-track"><span id="bar-mediano" class="stat-fill fill-mid"></span></div>
+        </li>
+        <li>
+          <div class="stat-row">
+            <span>Não gostei</span>
+            <strong id="count-nao-gostei">0</strong>
+          </div>
+          <div class="stat-track"><span id="bar-nao-gostei" class="stat-fill fill-bad"></span></div>
+        </li>
+      </ul>
+
+      <h2 class="section-title">Comentários escritos</h2>
+      <ul id="lista-comentarios" class="comments"></ul>
+
+      <div class="result-actions">
+        <a class="btn btn-primary" href="index.html">Voltar ao início</a>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

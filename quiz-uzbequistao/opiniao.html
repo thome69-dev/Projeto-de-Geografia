@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Opinião · Quiz Uzbequistão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <main class="shell">
+    <div class="card">
+      <p class="eyebrow">Feedback</p>
+      <h1 class="title">O que você achou do quiz?</h1>
+      <p class="lead">Escolha uma opção. O comentário é opcional.</p>
+
+      <form id="form-opiniao" class="stack">
+        <fieldset class="mood-set">
+          <legend class="sr-only">Sua opinião</legend>
+          <label class="mood">
+            <input type="radio" name="opiniao" value="gostei" required>
+            <span>
+              <strong>Gostei</strong>
+              <small>Foi legal e fácil de usar</small>
+            </span>
+          </label>
+          <label class="mood">
+            <input type="radio" name="opiniao" value="mediano" required>
+            <span>
+              <strong>Mediano</strong>
+              <small>Nem bom, nem ruim</small>
+            </span>
+          </label>
+          <label class="mood">
+            <input type="radio" name="opiniao" value="nao-gostei" required>
+            <span>
+              <strong>Não gostei</strong>
+              <small>Poderia ser melhor</small>
+            </span>
+          </label>
+        </fieldset>
+
+        <label class="label" for="comentario">Comentário (opcional)</label>
+        <textarea id="comentario" name="comentario" class="input area" rows="3" maxlength="180" placeholder="Ex: as perguntas estavam boas"></textarea>
+
+        <p id="aviso-opiniao" class="aviso" hidden>Escolha se gostou, se achou mediano ou se não gostou.</p>
+        <button class="btn btn-primary" type="submit">Enviar opinião</button>
+      </form>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

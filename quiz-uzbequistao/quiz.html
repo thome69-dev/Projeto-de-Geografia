@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz · Uzbequistão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <main class="shell">
+    <div class="card card-wide">
+      <header class="quiz-top">
+        <div>
+          <h1 id="saudacao" class="title title-sm">Olá, <span class="accent">Visitante</span>!</h1>
+          <p class="lead">Toque em uma opção para responder.</p>
+        </div>
+        <p id="contador" class="counter">1 / 5</p>
+      </header>
+
+      <div class="progress-wrap" aria-hidden="true">
+        <div id="progress" class="progress-bar"></div>
+      </div>
+
+      <form id="form-quiz" class="quiz-form">
+        <section class="question" data-index="1">
+          <h2 class="q-title">Qual é a capital do Uzbequistão?</h2>
+          <div class="options">
+            <label class="option"><input type="radio" name="q1" value="a"><span>Astana</span></label>
+            <label class="option"><input type="radio" name="q1" value="b"><span>Tashkent</span></label>
+            <label class="option"><input type="radio" name="q1" value="c"><span>Bishkek</span></label>
+            <label class="option"><input type="radio" name="q1" value="d"><span>Dushanbe</span></label>
+          </div>
+        </section>
+
+        <section class="question" data-index="2">
+          <h2 class="q-title">Em qual continente o Uzbequistão está localizado?</h2>
+          <div class="options">
+            <label class="option"><input type="radio" name="q2" value="a"><span>Europa</span></label>
+            <label class="option"><input type="radio" name="q2" value="b"><span>Ásia Central</span></label>
+            <label class="option"><input type="radio" name="q2" value="c"><span>Oriente Médio</span></label>
+            <label class="option"><input type="radio" name="q2" value="d"><span>Leste Asiático</span></label>
+          </div>
+        </section>
+
+        <section class="question" data-index="3">
+          <h2 class="q-title">Qual foi a famosa rota comercial histórica da qual o país fez parte?</h2>
+          <div class="options">
+            <label class="option"><input type="radio" name="q3" value="a"><span>Rota do Ouro</span></label>
+            <label class="option"><input type="radio" name="q3" value="b"><span>Rota da Seda</span></label>
+            <label class="option"><input type="radio" name="q3" value="c"><span>Rota das Especiarias</span></label>
+            <label class="option"><input type="radio" name="q3" value="d"><span>Rota Transaariana</span></label>
+          </div>
+        </section>
+
+        <section class="question" data-index="4">
+          <h2 class="q-title">Qual é o idioma oficial falado no país?</h2>
+          <div class="options">
+            <label class="option"><input type="radio" name="q4" value="a"><span>Uzbeque</span></label>
+            <label class="option"><input type="radio" name="q4" value="b"><span>Turco</span></label>
+            <label class="option"><input type="radio" name="q4" value="c"><span>Árabe</span></label>
+            <label class="option"><input type="radio" name="q4" value="d"><span>Mongol</span></label>
+          </div>
+        </section>
+
+        <section class="question" data-index="5">
+          <h2 class="q-title">Qual destas cidades históricas é famosa por sua arquitetura?</h2>
+          <div class="options">
+            <label class="option"><input type="radio" name="q5" value="a"><span>Almaty</span></label>
+            <label class="option"><input type="radio" name="q5" value="b"><span>Samarcanda</span></label>
+            <label class="option"><input type="radio" name="q5" value="c"><span>Baku</span></label>
+            <label class="option"><input type="radio" name="q5" value="d"><span>Tbilisi</span></label>
+          </div>
+        </section>
+
+        <p id="aviso" class="aviso" hidden>Escolha uma opção para continuar.</p>
+
+        <div class="form-actions">
+          <button type="button" id="prevBtn" class="btn btn-ghost" disabled>Voltar</button>
+          <button type="button" id="nextBtn" class="btn btn-ghost">Próxima</button>
+          <button type="submit" id="submitBtn" class="btn btn-primary" hidden>Ver resultado</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
